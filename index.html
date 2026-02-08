@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventory App</title>
+  <link rel="stylesheet" href="inventory.css" type="text/css" media="all" />
+</head>
+<body>
+   <section id="inventory_name">
+     <p>Inventory App</p>
+     </div>
+   </section>
+   
+   <section id="add_product">
+     
+     <div class="product_inputs">
+       
+       <div class="inp_lab">
+          <label for="product_name">Enter Product Name</label>
+          <input type="text" id="product_name" required/>
+          <label for="product_cost">Enter Cost Of Product</label>
+          
+          <div class="number">
+            <input type="number" id="product_cost" required/>
+            <p class="naira">$</p>
+          </div>
+        
+         <button id="submit_product">Enter</button>
+       </div>
+       
+     </div>
+     
+     <div class="image_count">
+       <img src="Placeholder.jpeg" id="product_image"/>
+       <input type="file" name="" id="fileInput" accept="image/*" />
+       <div id="inc_red_container">
+         
+         <button id="reduce_btn">-</button>
+         <p id="num_of_product">0</p>
+         <button id="increase_btn">+</button>
+         
+       </div>
+       
+     </div>
+     
+   </section>
+   
+   <section id="search">
+      <div class="search_input">
+        <input type="text" id="searchInput" placeholder="Search Product...." />
+        <p id="searchBtn">🔍<p>
+      </div>
+   </section>
+   <hr />
+   <section id="display"></section>
+   <div id="noProduct"></div>
+  <script src="inventory.js" ></script>
+</body>
+</html>
